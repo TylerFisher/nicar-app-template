@@ -1,0 +1,99 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+$primaryControl: #6d8ac4;
+$secondaryControl: #bccae5;
+$heavyGray: #e0e0e0;
+$lightGray: #ebebeb;
+$brandingGray: #7c7c7c;
+$nprTextColor: #111;
+$darkHover: #4065a2;
+$blue: #36c;
+$red: #f30;
+
+$backgroundColor: white;
+
+$mainColor: #111;
+$mainFont: Gotham, Georgia, serif;
+$mainFontSize: 40px;
+
+$headingFont: 'Gotham', Helvetica, Arial, sans-serif;
+$headingColor: #333;
+
+$linkColor: $blue;
+
+$selectionBackgroundColor: #bccae5;
+$selectionColor: #000;
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+.reveal {
+
+    box-sizing: border-box;
+    border-left: $red 25px solid;
+    border-right: $blue 25px solid;
+
+    transition: border 500ms ease-out;
+    -webkit-transition: border 500ms ease-out;
+    -moz-transition: border 500ms ease-out;
+    -o-transition: border 500ms ease-out;
+
+    h1, h2, h3, h4, h5, h6 {
+        text-shadow: none;
+        text-transform: none;
+    }
+    h1 {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .big {
+       font-size: 500%;
+       font-weight: bold;
+    }
+    .title-slide-text {
+        color: $backgroundColor;
+    }
+
+    blockquote {
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.10);
+        font-size: 110%;
+        text-align: center;
+    }
+    .citation {
+        text-align: right;
+        font-size: 90%;
+    }
+    p {
+        font-size: 40px;
+    }
+    p.small {
+        font-size: 24px;
+    }
+}
+
+.title-slide .reveal .state-background {
+    background-color: $blue;
+}
+
+.title-slide .reveal {
+    border: none;
+    transition: border 500ms ease-out;
+    -webkit-transition: border 500ms ease-out;
+    -moz-transition: border 500ms ease-out;
+    -o-transition: border 500ms ease-out;
+
+}
