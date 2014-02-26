@@ -65,6 +65,15 @@ $selectionColor: #000;
         color: $backgroundColor;
     }
 
+    section {
+        img {
+            margin: 0;
+            border: none;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
     blockquote {
         width: 100%;
         padding: 20px;

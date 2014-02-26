@@ -42,6 +42,9 @@
 			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
 		</script>
 
+		<script src="js/jquery.js"></script>
+		<script src="js/freezeframe.min.js"></script>
+
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -121,8 +124,102 @@
 				</section>
 
 				<section data-state="title-slide">
-					<h1 class="title-slide-text">Start to finish</h1>
+					<h1 class="title-slide-text">Starting a project</h1>
 				</section>
+
+				<section>
+					<h2>Cloning</h2>
+					<img class="freezeframe" src="img/clone.gif" />
+				</section>
+
+				<section>
+					<h2>Bootstrapping</h2>
+					<img class="freezeframe" src="img/bootstrap.gif" />
+				</section>
+
+				<section>
+					<h2>Default GitHub Issues</h2>
+					<img class="freezeframe" src="img/issues.gif" />
+				</section>
+
+				<section>
+					<h2>Initial Project Template</h2>
+					<img class="freezeframe" src="img/app.py.gif" />
+				</section>
+
+				<section>
+					<p>Let's <a href="http://www.github.com/tylerfisher/nicar-rulez" target="_blank">take a look</a> at everything we have.</a></p>
+				</section>
+
+				<section data-state="title-slide">
+					<h2 class="title-slide-text">Spreadsheets!</h2>
+				</section>
+
+				<section>
+					<h2>Publish spreadsheet</h2>
+					<img class="freezeframe" src="img/spreadsheet_init.gif" />
+				</section>
+
+				<section>
+					<h2>Configure app</h2>
+					<img class="freezeframe" src="img/spreadsheet_config.gif" />
+				</section>
+
+				<section>
+					<h2><a href="https://docs.google.com/a/tylerjfisher.com/spreadsheet/ccc?key=0AqjLQISCZzBkdE5rTV9EVFJ0d2h0R1BmQlYtZXY1MEE&usp=drive_web#gid=0" target="_blank">Import</a> your data</h2>
+				</section>
+
+				<section>
+					<h2>Update copy</h2>
+					<img class="freezeframe" src="img/update_copy.gif" />
+				</section>
+
+				<section>
+					<p>Write <a href="https://github.com/TylerFisher/nicar-rulez/blob/master/templates/index.html" target="_blank">Jinja templates</a> to interact with the spreadsheet.</p>
+				</section>
+
+				<section data-state="title-slide">
+					<h2 class="title-slide-text">One-touch deployment</h2>
+				</section>
+
+				<section>
+					<h2>Cross your fingers</h2>
+					<img class="freezeframe" src="img/deploy.gif" />
+				</section>
+
+				<section>
+					<h1>What happened?</h1>
+				</section>
+
+				<section>
+					<p>Deployment targets are set in <a href="https://github.com/TylerFisher/nicar-rulez/blob/master/app_config.py" target="_blank"><code>app_config.py</code></a>.</p>
+				</section>
+
+				<section>
+					<p>LESS files and JSTs are compiled.</p>
+				</section>
+
+				<section>
+					<p>Jinja templates are baked to flat HTML.</p>
+				</section>
+
+				<section>
+					<p>All CSS and JS files are minified and compressed into one file.</p>
+				</section>
+
+				<section>
+					<p>All assets are gzipped.</p>
+				</section>
+
+				<section>
+					<p>Everything is pushed to s3.</p>
+				</section>
+
+				<section>
+					<h1>We're live!</h1>
+					<p><a href="http://apps.npr.org/nicar-rulez" target="_blank">apps.npr.org/nicar-rules</a></p>
+				</section>
+
 
 			</div>
 
